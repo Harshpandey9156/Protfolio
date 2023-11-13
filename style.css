@@ -345,8 +345,8 @@ border-right: .2rem solid var(--main-color);
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: 0.2rem solid    black; 
-    border-bottom: 0.2rem solid black ;
+    border-top: 0.2rem solid    var(--second-bg-color); 
+    border-bottom: 0.2rem solid var(--second-bg-color) ;
     border-left: 0.2rem solid var(--main-color);
     border-right: 0.2rem solid var(--main-color);
     animation: aboutSpin 8s linear infinite;
@@ -562,31 +562,40 @@ border-right: .2rem solid var(--main-color);
 }
 
 .skill-column:nth-child(1) .skill-content .progress:nth-child(1) .bar span{
-    width: 90%;
+    width: 80%;
 }
 
 .skill-column:nth-child(1) .skill-content .progress:nth-child(2) .bar span{
-    width: 60%;
+    width: 90%;
 }
 .skill-column:nth-child(1) .skill-content .progress:nth-child(3) .bar span{
-    width: 70%;
-}
-.skill-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
     width: 75%;
 }
-
-.skill-column:nth-child(2) .skill-content .progress:nth-child(1) .bar span{
+.skill-column:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
+    width: 80%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(5) .bar span{
+    width: 70%;
+}
+.skill-column:nth-child(1) .skill-content .progress:nth-child(6) .bar span{
     width: 90%;
+}
+/* for second */
+.skill-column:nth-child(2) .skill-content .progress:nth-child(1) .bar span{
+    width: 70%;
 }
 
 .skill-column:nth-child(2) .skill-content .progress:nth-child(2) .bar span{
-    width: 60%;
+    width: 90%;
 }
 .skill-column:nth-child(2) .skill-content .progress:nth-child(3) .bar span{
-    width: 70%;
+    width: 80%;
 }
 .skill-column:nth-child(2) .skill-content .progress:nth-child(4) .bar span{
-    width: 75%;
+    width: 85%;
+}
+.skill-column:nth-child(2) .skill-content .progress:nth-child(5) .bar span{
+    width: 90%;
 }
 
 /* Style for the project section */
@@ -618,6 +627,17 @@ border-right: .2rem solid var(--main-color);
 
 .project-row .project-card {
     flex: 1 1 40rem;
+}
+.project-row .project-card .description {
+    font-size: 16px; /* Adjust the font size as needed */
+}
+.project-row .project-card .description p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+.project-row .project-card li {
+    font-size: 16px;
 }
 
 .project-card .title {
@@ -682,6 +702,7 @@ border-right: .2rem solid var(--main-color);
 .contact{
     min-height: auto;
     padding-bottom: 7rem;
+    background: var(--second-bg-color);
 
 }
 .contact h2{
@@ -790,7 +811,7 @@ border-right: .2rem solid var(--main-color);
     padding: .8rem;
     /* gap: 2rem; */
     /* margin-top: 1rem; */
-    background: var(--main-color);
+    background: var(--second-bg-color);
     border: .2rem solid var(--main-color);
     border-radius: .6rem;
     z-index: 1;
